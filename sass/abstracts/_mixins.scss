@@ -1,0 +1,44 @@
+@mixin breakpoint($bp) {
+  @if $bp ==tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp ==tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp ==desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp ==desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin reset-list() {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+@mixin button(){
+  display: inline-block;
+  background-color: $pink;
+  color: white;
+  padding: 16px 68px;
+  border-radius: 16px 16px 16px 0px;
+  font-weight: 400;
+  font-size: $normal-font-size;
+  text-decoration: none;
+}

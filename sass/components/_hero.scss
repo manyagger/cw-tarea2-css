@@ -1,0 +1,40 @@
+.hero {
+    padding-bottom: 144px;
+    max-width: 784px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        font-family: $title-font;
+        font-size: 80px;
+        font-weight: bold;
+        width: 740px;
+        padding-bottom: 24px;
+    }
+
+    &__description {
+        font-size: 24px;
+        line-height: 40px;
+        width: 648px;
+        color: $gray;
+        padding-bottom: 32px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .button {
+            @include button();
+        }
+
+        .learn-more {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+            color: white;
+            font-weight: 600;
+        }
+    }
+}

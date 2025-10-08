@@ -1,0 +1,22 @@
+.gath-info {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+
+    &__item {
+        width: 190px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        &-icon {
+            padding: 12px;
+            border-radius: 16px;
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+        &-title {
+            font-weight: 600;
+        }
+    }
+}

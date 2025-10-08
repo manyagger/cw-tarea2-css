@@ -1,0 +1,28 @@
+    nav.nav-primary {
+        padding-right: 110px;
+
+        ul {
+            @include reset-list();
+            gap: 48px;
+
+            a {
+                color: $gray;
+                text-decoration: none;
+
+                &.active {
+                    color: white;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        height: 4px;
+                        background-color: $pink;
+                        width: 55%;
+                        bottom: -10px;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+    }

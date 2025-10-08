@@ -1,0 +1,21 @@
+body {
+  font-family: $primary-font;
+  font-size: $normal-font-size;
+  background-color: $black;
+  color: white;
+
+  &::before {
+    content: "";
+    height: 85%;
+    width: 50%;
+    background-image: url("../img/background-image.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left top;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 175px;
+    z-index: -1;
+  }
+}
